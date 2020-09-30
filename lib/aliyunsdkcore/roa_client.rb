@@ -126,7 +126,7 @@ module AliyunSDKCore
     end
 
     def authorization(string_to_sign)
-      "acs #{self.access_key_id}:#{signature(string_to_sign)}"
+      "LOG #{self.access_key_id}:#{signature(string_to_sign)}"
     end
 
     def signature(string_to_sign)
